@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x:auto;
 
   .home-nav {
     height: 8vh;
@@ -255,6 +256,10 @@
       color: rgb(255, 255, 255);
       font-size: 1.5rem;
       font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .info-button{
+      display: none;
     }
 
    
@@ -707,14 +712,18 @@
   }
 
   .info{
-    text-align: center;
+
 
     .info-container{
       padding: 2rem;
 
       .info-text{
+        h1{
+          text-align: center;
+        }
+    
         padding: 0;
-        text-align: center;
+        text-align: left;
         justify-content: center;
       }
 
@@ -728,6 +737,11 @@
   }
 
   .home{
+    .address{
+      font-size: 10px;
+      position: absolute;
+      right: 0.5rem;
+    }
    
 
     .home-nav{
@@ -735,13 +749,23 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      border-bottom: none;
+      height: 10vh;
+      background: rgba(0, 0, 0, 0.798);
+      border-bottom: 0.5px solid white;
 
       .left{
-        padding-top: 10rem;
+        width: 100%;
+        margin-top: 1rem;
 
         img{
-          height: 3.2vh;
+          height: 3.4vh;
+          
         }
+      }
+
+      .right{
+        display: none;
       }
 
     
@@ -766,30 +790,45 @@
     .home-info{
       text-align: center;
       .welcome-message{
-        font-size: 2.4rem;
+        font-size: 1.7rem;
+        padding: 10px;
       }
 
       .welcome-description{
         font-size: 1.3rem;
         padding: 0 10px;
+        display: none;
       }
+
+      .info-button{
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        cursor: pointer;
+        border: 3px solid;
+        padding: 0.25em 0.5em;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        position: relative;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      
+      img{
+        height: 20vh;
+      }
+
     }
   }
 
-  .address{
-   padding: unset;
-   right: 0;
-   text-align: unset;
-   font-size: 10px;
-   bottom: 0;
-   padding: 0;
-
-    
-    
-
   
-  }
 
+    
+  
   
 
   

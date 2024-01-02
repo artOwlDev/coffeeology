@@ -60,6 +60,8 @@ const Home = () => {
             <p className='welcome-message'>For all coffee lovers out there!</p>
             <p className='welcome-description'>Our main goal is to always address a high level of customer satisfaction with consistency and freshest cup of coffee.</p>
             <img src={logoCircle} alt="circle coffeeology logo"/>
+            <button className='info-button'>Learn More</button>
+
             <FaAngleDown className='icon'/>
         </div>
 
