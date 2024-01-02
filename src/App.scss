@@ -277,8 +277,6 @@
 }
 
 
-
-
 .info{
   height: 80vh;
   background-color: #1a1a1a;
@@ -545,6 +543,25 @@
 
   
 }
+.footer{
+  display: flex;
+  background-color:#1a1a1a;
+  
+  padding-bottom: 50px;
+  text-align: center; 
+  justify-content: center;
+
+  .footer-left{
+
+    color: white;
+    font-size: small;
+    
+
+  }
+
+}
+
+
 
 @keyframes arrowAnimation {
   from {
@@ -767,12 +784,15 @@
    bottom: 0;
    padding: 0;
 
-    p{
-    }
     
+    
+
+  
   }
+
   
 
   
 }
+
 
