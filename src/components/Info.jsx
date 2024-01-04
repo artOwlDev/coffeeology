@@ -6,7 +6,7 @@ import menuPic from "../img/menu-image.jpg"
 
 const Info = () => {
     const scrollTo = (name) => {
-        sElement = document.getElementById(name);
+        const projectsElement = document.getElementById(name);
         if (projectsElement) {
             console.log("Element found:", projectsElement);
             projectsElement.scrollIntoView({ behavior: 'smooth' });

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arsenal&family=Barlow+Condensed&family=Courgette&family=Kalam&family=Open+Sans:wght@300&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100&family=Satisfy&display=swap');
 
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+
 .home {
   height: 100vh;
   background-color: #121212;
@@ -183,10 +189,10 @@
       a {
         position: relative;
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         text-align: center;
-        line-height: 63px;
+        line-height: 50px;
         background: transparent;
         border-radius: 50%;
         font-size: 30px;
@@ -551,18 +557,30 @@
 .footer{
   display: flex;
   background-color:#1a1a1a;
-  
-  padding-bottom: 50px;
   text-align: center; 
   justify-content: center;
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  height: 100px;
+  gap: 1rem;
 
-  .footer-left{
-
-    color: white;
-    font-size: small;
-    
-
+  a{
+    color: inherit;
   }
+
+  .icon{
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+
+
+
 
 }
 
@@ -577,7 +595,6 @@
 @media (max-width: 1400px) {
 
   .gallery{
-    padding: 10px;
 
     .photo-div {
       grid-template-columns: repeat(2, 1fr);
@@ -698,8 +715,32 @@
 
 
 @media (max-width: 1000px) {
+  .home{
+    height: 100%;
+  }
+
+  .footer{
+    display: flex;
+    background-color:#1a1a1a;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: white;
+    font-size: 10px;
+    padding: 2rem 0;
+
+    .icon{
+      font-size: 1rem;
+    }
+
+  
+   
+  
+  }
+
   .gallery{
-    padding: 10px;
+    padding-top: 3rem;
 
     .photo-div {
       grid-template-columns: repeat(1, 1fr);
@@ -715,16 +756,20 @@
 
 
     .info-container{
-      padding: 2rem;
+      padding: 0;
 
       .info-text{
         h1{
           text-align: center;
         }
+
+        button{
+          margin: 0 auto;
+        }
+
+
     
-        padding: 0;
-        text-align: left;
-        justify-content: center;
+       
       }
 
     }
@@ -737,6 +782,7 @@
   }
 
   .home{
+    height: 100%;
     .address{
       font-size: 10px;
       position: absolute;
@@ -750,16 +796,17 @@
       align-items: center;
       gap: 10px;
       border-bottom: none;
-      height: 10vh;
+      height: 8vh;
       background: rgba(0, 0, 0, 0.798);
       border-bottom: 0.5px solid white;
 
       .left{
         width: 100%;
-        margin-top: 1rem;
+
 
         img{
-          height: 3.4vh;
+          height: 2.4vh;
+
           
         }
       }
@@ -789,6 +836,8 @@
 
     .home-info{
       text-align: center;
+      margin-top: 4rem;
+
       .welcome-message{
         font-size: 1.7rem;
         padding: 10px;
@@ -832,6 +881,10 @@
   
 
   
+}
+
+::-webkit-scrollbar-thumb{
+  color: black;
 }
 
 
